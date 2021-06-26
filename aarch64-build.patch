@@ -1,0 +1,11 @@
+--- qctools/Project/QtCreator/qctools-gui/qctools-gui.pro	2020-12-17 10:45:54.000000000 -0500
++++ qctools/Project/QtCreator/qctools-gui/qctools-gui.pro-new	2021-06-16 20:48:17.054312401 -0400
+@@ -33,7 +33,7 @@
+ }
+ else:linux {
+     contains(QT_ARCH, x86_64):QTAVLIBFOLDER=lib_linux_x86_64
+-    else:QTAVLIBFOLDER=lib_linux_x86
++    else:QTAVLIBFOLDER=lib_linux_arm64+arm
+ }
+ else:mac {
+     contains(QT_ARCH, x86_64):QTAVLIBFOLDER=lib_osx_x86_64_llvm
