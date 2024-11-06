@@ -2,6 +2,7 @@
 <!-- Copyright 2016-2020 MediaArea.net <info@mediaarea.net> -->
 <component type="desktop">
   <id type="desktop">net.mediaarea.QCTools.desktop</id>
+  <launchable type="desktop-id">net.mediaarea.QCTools.desktop</launchable>
   <metadata_license>CC0</metadata_license>
   <project_license>GPL-3.0+</project_license>
   <name>QCTools</name>
