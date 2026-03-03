@@ -1,18 +1,20 @@
 {
   "app-id": "net.mediaarea.QCTools",
   "runtime": "org.kde.Platform",
-  "runtime-version": "6.8",
+  "runtime-version": "6.10",
   "sdk": "org.kde.Sdk",
   "command": "QCTools",
   "rename-desktop-file": "qctools.desktop",
   "rename-icon": "qctools",
-  "finish-args": [ "--filesystem=host",
-                   "--device=dri",
-                   "--share=network",
-                   "--socket=wayland",
-                   "--socket=x11",
-                   "--socket=pulseaudio",
-                   "--share=ipc" ],
+  "finish-args": [
+    "--filesystem=host",
+    "--device=dri",
+    "--share=network",
+    "--socket=wayland",
+    "--socket=x11",
+    "--socket=pulseaudio",
+    "--share=ipc"
+  ],
   "modules": [
       {
       "name":"ffmpeg",
@@ -38,8 +40,17 @@
     {
       "name": "qwt",
       "buildsystem": "qmake",
-      "config-opts": [ "-after", "QWT_INSTALL_PREFIX=/app" ],
-      "cleanup": [ "/doc", "/features", "/plugins", "/include", "/lib/pkgconfig" ],
+      "config-opts": [
+        "-after",
+        "QWT_INSTALL_PREFIX=/app"
+      ],
+      "cleanup": [
+        "/doc",
+        "/features",
+        "/plugins",
+        "/include",
+        "/lib/pkgconfig"
+      ],
       "sources": [
          {
            "type": "archive",
@@ -81,9 +92,9 @@
       ],
       "post-install": [
         "install -D -m 0755 qctools-gui/QCTools /app/bin/QCTools",
-        "install -D -m 0644 ../../GNU/GUI/qctools.desktop /app/share/applications/qctools.desktop",
-        "install -D -m 0644 ../../../qctools.png /app/share/icons/hicolor/256x256/apps/qctools.png",
-        "install -D -m 0644 ../../../net.mediaarea.QCTools.appdata.xml /app/share/metainfo/net.mediaarea.QCTools.appdata.xml"
+        "install -D -m 0644 ../../GNU/GUI/qctools.desktop -t /app/share/applications/",
+        "install -D -m 0644 ../../../qctools.png -t /app/share/icons/hicolor/256x256/apps/",
+        "install -D -m 0644 ../../../net.mediaarea.QCTools.appdata.xml -t /app/share/metainfo/"
       ]
     }
   ]
