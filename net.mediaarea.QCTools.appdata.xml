@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Copyright 2016-2020 MediaArea.net <info@mediaarea.net> -->
-<component type="desktop">
-  <id type="desktop">net.mediaarea.QCTools.desktop</id>
+<component type="desktop-application">
+  <id>net.mediaarea.QCTools</id>
   <launchable type="desktop-id">net.mediaarea.QCTools.desktop</launchable>
   <metadata_license>CC0</metadata_license>
   <project_license>GPL-3.0+</project_license>
   <name>QCTools</name>
   <summary>Quality Control Tools for Video Preservation</summary>
   <description>
-    <p>QCTools is a software tool that helps users analyze and understand their digitized video files through use of audiovisual analytics and filtering to help users detect corruptions or compromises in the results of analog video digitization or in born-digital video.</p>
+    <p>QCTools is a software tool that helps users analyze and understand their digitized video files
+      through use of audiovisual analytics and filtering to help users detect corruptions or compromises
+      in the results of analog video digitization or in born-digital video.</p>
   </description>
   <keywords>
     <keyword>video</keyword>
@@ -27,33 +29,18 @@
       <image>https://mediaarea.net/bundles/qctools/img/QCTools_Linux_Filters_en.png</image>
     </screenshot>
   </screenshots>
-  <content_rating type="oars-1.0">
-    <content_attribute id="violence-cartoon">none</content_attribute>
-    <content_attribute id="violence-fantasy">none</content_attribute>
-    <content_attribute id="violence-realistic">none</content_attribute>
-    <content_attribute id="violence-bloodshed">none</content_attribute>
-    <content_attribute id="violence-sexual">none</content_attribute>
-    <content_attribute id="drugs-alcohol">none</content_attribute>
-    <content_attribute id="drugs-narcotics">none</content_attribute>
-    <content_attribute id="drugs-tobacco">none</content_attribute>
-    <content_attribute id="sex-nudity">none</content_attribute>
-    <content_attribute id="sex-themes">none</content_attribute>
-    <content_attribute id="language-profanity">none</content_attribute>
-    <content_attribute id="language-humor">none</content_attribute>
-    <content_attribute id="language-discrimination">none</content_attribute>
-    <content_attribute id="social-chat">none</content_attribute>
-    <content_attribute id="social-info">none</content_attribute>
-    <content_attribute id="social-audio">none</content_attribute>
-    <content_attribute id="social-location">none</content_attribute>
-    <content_attribute id="social-contacts">none</content_attribute>
-    <content_attribute id="money-purchasing">none</content_attribute>
-    <content_attribute id="money-gambling">none</content_attribute>
-  </content_rating>
+  <content_rating type="oars-1.1"/>
   <url type="homepage">https://mediaarea.net/QCTools</url>
   <url type="help">https://mediaarea.net/QCTools/How_To_Use</url>
   <url type="bugtracker">https://github.com/bavc/qctools/issues</url>
+  <url type="vcs-browser">https://github.com/bavc/qctools</url>
   <update_contact>info@mediaarea.net</update_contact>
-  <developer_name>MediaArea.net SARL</developer_name>
+  <provides>
+    <id>net.mediaarea.QCTools.desktop</id>
+  </provides>
+  <developer id="net.mediaarea">
+    <name>MediaArea.net SARL</name>
+  </developer>
   <releases>
     <release version="1.4" date="2024-12-30" />
     <release version="1.2" date="2020-12-18" />
